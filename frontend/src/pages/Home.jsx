@@ -4,9 +4,10 @@ import LatestArrivals from '../components/LatestArrivals'
 import BestSellers from '../components/BestSellers'
 import OurPolicy from '../components/OurPolicy'
 import NewsLetterBox from '../components/NewsLetterBox'
-import Footer from '../components/Footer'
+
 
 function Home() {
+
   return (
     <div>
       <Hero />
@@ -14,7 +15,6 @@ function Home() {
       <BestSellers />
       <OurPolicy />
       <NewsLetterBox />
-      <Footer />
     </div>
   )
 }

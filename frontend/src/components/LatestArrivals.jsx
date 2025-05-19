@@ -7,9 +7,8 @@ function LatestArrivals() {
   const { products } = useContext(ShopContext);
   const [lastProducts, setLastProducts] = useState([]);
   useEffect(() => {
-    setLastProducts(products.slice(2, 12));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    setLastProducts(products.slice(2 , 12));
+  }, [products]);
   return (
     <div className="my-10">
       <div className="text-center py-8 text-3xl">

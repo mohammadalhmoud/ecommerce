@@ -7,11 +7,9 @@ function BestSellers() {
   const { products } = useContext(ShopContext);
   const [bestseller, setBestSeller] = useState([]);
   useEffect(() => {
-    const bestProduct = products.filter((item)=>item.bestseller)
-    console.log(bestProduct)
-    setBestSeller(bestProduct.slice(0,5));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    const bestProduct = products.filter((item) => item.bestseller);
+    setBestSeller(bestProduct.slice(1, 5));
+  }, [products]);
   return (
     <div className="my-10">
       <div className="text-center py-8 text-3xl">
