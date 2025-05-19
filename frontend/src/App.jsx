@@ -9,7 +9,7 @@ import Collection from "./pages/Collection";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import Search from "./components/search";
+import Search from "./components/Search";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
 import Profile from "./pages/Profile";
